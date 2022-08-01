@@ -1,0 +1,408 @@
+/* font-family: 'Bai Jamjuree', sans-serif;
+font-family: 'League Spartan', sans-serif; */
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+Font size: 18px
+*/
+:root {
+  --cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --font-family-1: "Bai Jamjuree", sans-serif;
+  --font-family-2: "League Spartan", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.container {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.landing-section {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+.logo-image-container {
+  width: 8rem;
+  align-self: center;
+}
+
+.logo-image-container img {
+  margin-top: 0;
+}
+
+.main-heading {
+  margin-top: 4rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--font-family-1);
+}
+.subtitle,
+.ios-section {
+  margin-top: 1.9rem;
+  padding: 0 1.125rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.525rem;
+  font-family: var(--font-family-1);
+}
+.download-section {
+  margin-top: 3.625rem;
+}
+.download-option-ios,
+.download-option-mac {
+  font-family: var(--font-family-1);
+  background: var(--cyan);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10% / 65%;
+  box-shadow: 0 2px 10px 0px hsl(171, 66%, 44%);
+  padding: 1.1rem 0;
+  margin: 0 0.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.mac {
+  background-color: var(--light-blue);
+}
+.clipboard-ios {
+  margin-top: 9.845rem;
+}
+.ios-heading,
+.quick-search,
+.icloud-sync,
+.anywhere-section,
+.history {
+  text-align: center;
+  font-family: var(--font-family-1);
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+}
+.ios-desktop,
+.image-device,
+img {
+  margin-top: 2.5rem;
+  width: 100%;
+}
+.ios-properties {
+  margin-top: 4rem;
+  text-align: center;
+}
+.quick-search-detail,
+.icloud-sync-detail,
+.anywhere-detail,
+.history-detail {
+  margin-top: 1rem;
+  padding: 0 1.125rem;
+  text-align: center;
+  line-height: 1.525rem;
+  font-family: var(--font-family-1);
+}
+.second-section {
+  margin-top: 13rem;
+}
+.flow-section {
+  margin-top: 7.6rem;
+}
+.ios-mac,
+.workflow,
+.blacklist-heading,
+.plain-heading,
+.preview-heading {
+  text-align: center;
+  font-family: var(--font-family-1);
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+}
+.workflow-detail,
+.ios-mac-detail,
+.blacklist-detail,
+.plain-text-detail,
+.sneak-detail {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.7rem;
+  font-family: var(--font-family-1);
+}
+
+.blacklist,
+.snippets,
+.sneak {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.blacklist-snippets-sneak {
+  align-self: center;
+}
+.blacklist-snippets-sneak img {
+  width: 2.7rem;
+  margin-top: 0;
+}
+
+.company-wrapper,
+.clipboard-ios-mac {
+  margin-top: 11rem;
+}
+.company-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.google,
+.ibm,
+.microsoft,
+.hewlett-packard,
+.vector-graphics {
+  padding-bottom: 2rem;
+}
+.ending-section {
+  background-color: var(--Grayish-Blue);
+  margin-top: 11rem;
+  display: flex;
+  flex-direction: column;
+}
+.logo-image img {
+  width: 3.25rem;
+  align-self: center;
+  margin-top: 3rem;
+}
+.logo-image {
+  align-self: center;
+}
+.help-index {
+  text-align: center;
+  margin-top: 2rem;
+}
+.faq,
+.contact-us,
+.policy,
+.guide,
+.press-kit {
+  margin-top: 1.5rem;
+  font-family: var(--font-family-1);
+  font-size: 1.2rem;
+}
+.social-media-logo img {
+  width: 26px;
+  height: 26px;
+  margin: 0 1.325rem;
+}
+.social-media-logo {
+  margin-top: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.help-index a {
+  color: black;
+}
+
+@media (min-width: 376px) {
+  body {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 545px) {
+  .download-section {
+    display: flex;
+    justify-content: center;
+  }
+  .main-heading {
+    margin-top: 2.7rem;
+  }
+  .download-option-ios,
+  .download-option-mac {
+    width: 14rem;
+    height: 3.625rem;
+  }
+  .logo-image-container {
+    width: 6.825rem;
+  }
+  .download-section {
+    margin-top: 0.7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .main-heading {
+    font-size: 2.325rem;
+  }
+  .ios-section,
+  .subtitle {
+    margin-top: 0.825rem;
+  }
+  .ios-flexbox {
+    display: flex;
+    flex-direction: row;
+  }
+  .ios-desktop {
+    width: 35.5rem;
+    align-self: center;
+    margin-left: -3rem;
+  }
+  .ios-properties {
+    width: 35%;
+    margin-top: 5rem;
+    margin-left: 7rem;
+  }
+  .quick-search,
+  .icloud-sync,
+  .history {
+    text-align: start;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+  }
+  .quick-search-detail,
+  .icloud-sync-detail,
+  .history-detail {
+    text-align: start;
+    padding: 0 0;
+    margin-top: 0.325rem;
+    font-size: 0.825rem;
+  }
+
+  .second-section {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-device {
+    width: 38rem;
+    align-self: center;
+  }
+
+  .flow-section {
+    margin-top: 3rem;
+  }
+  .third-section {
+    display: flex;
+  }
+  .blacklist,
+  .snippets,
+  .sneak {
+    margin: 3rem 0.7rem;
+  }
+  .blacklist-heading,
+  .plain-heading,
+  .preview-heading {
+    font-size: 1.25rem;
+  }
+  .blacklist-detail,
+  .plain-text-detail,
+  .sneak-detail {
+    font-size: 0.825rem;
+  }
+  .preview-heading {
+    margin-top: 3.125rem;
+  }
+  .company-wrapper {
+    margin-top: 1rem;
+  }
+  .ending-section {
+    flex-direction: row;
+    margin-top: 8.5rem;
+  }
+  .logo-image {
+    height: fit-content;
+    margin: -1rem 5% 1rem 5%;
+  }
+  .help-index {
+    margin: 0 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 32rem;
+    height: 6rem;
+  }
+  .faq,
+  .contact-us,
+  .policy,
+  .guide,
+  .press-kit {
+    font-size: 1rem;
+  }
+  .social-media-logo {
+    margin-left: 10%;
+    height: fit-content;
+  }
+  .social-media-logo img {
+    margin: auto 0.7rem;
+  }
+}
+@media (min-width: 1150px) {
+  .ios-mac-detail {
+    padding: 0 18rem;
+  }
+  .subtitle,
+  .ios-section,
+  .anywhere-detail {
+    padding: 0 21rem;
+  }
+  .plain-text-detail,
+  .blacklist-detail,
+  .sneak-detail {
+    padding: 0 4rem;
+  }
+  .company-wrapper {
+    flex-direction: row;
+  }
+  .google,
+  .ibm,
+  .microsoft,
+  .hewlett-packard,
+  .vector-graphics {
+    margin: 0 3%;
+  }
+
+  .social-media-logo {
+    margin-left: 22%;
+  }
+
+  .logo-image {
+    margin: -1rem 8% 1rem 8%;
+  }
+  .clipboard-ios-mac {
+    margin-top: 6.7rem;
+  }
+}
